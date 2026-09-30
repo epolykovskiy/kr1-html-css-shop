@@ -142,7 +142,7 @@ footer {
     outline-offset: 2px;
 }
 
-[aria-invalid="true"] {
+.form-field [aria-invalid="true"] {
     border-color: #b00020;
 }
 
