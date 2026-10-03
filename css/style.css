@@ -38,29 +38,29 @@
    =============================== */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-    color: var(--color-text);
-    background-color: var(--color-bg);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 header,
 main,
 footer {
-    padding: var(--space-lg);
+  padding: var(--space-lg);
 }
 
 header {
-    background-color: var(--color-surface);
+  background-color: var(--color-surface);
 }
 
 footer {
-    background-color: var(--color-surface);
+  background-color: var(--color-surface);
 }
 
 /* ===============================
@@ -110,33 +110,33 @@ a:focus-visible {
    =============================== */
 
 .site-header {
-    max-width: var(--container-width);
-    margin: 0 auto;
+  max-width: var(--container-width);
+  margin: 0 auto;
 }
 
 .site-logo {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-text);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 .site-nav_list {
-    padding: 0;
-    margin: var(--space-md) 0 0;
-    list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0 0;
+  list-style: none;
 }
 
 .site-nav_list li {
-    margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .site-nav_list a {
-    color: var(--color-primary);
-    text-decoration: none;
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .site-nav_list a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .hero {
@@ -251,7 +251,7 @@ a:focus-visible {
 }
 
 .form-actions {
-    display: flex;
-    gap: var(--space-sm);
-    margin-top: var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
 }
