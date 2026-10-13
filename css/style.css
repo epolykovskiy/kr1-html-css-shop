@@ -253,6 +253,10 @@ a:focus-visible {
   align-self: flex-start;
 }
 
+.product-card__image {
+  width: 100%;
+}
+
 .catalog-layout {
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
@@ -441,7 +445,7 @@ a:focus-visible {
   margin-top: var(--space-lg);
 }
 
-.form-field [aria-invalid="true"] {
+.order-form__field [aria-invalid="true"] {
   border-color: var(--color-danger);
 }
 
