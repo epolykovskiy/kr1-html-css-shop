@@ -22,22 +22,6 @@
   --color-success-bg: #eefaf0;
   --color-white: #ffffff;
 
-  /* Цвета тёмной темы */
-  :root[data-theme="dark"] {
-    color-scheme: dark;
-    --color-bg: #1c1c1e;
-    --color-surface: #2a2a2d;
-    --color-surface-alt: #323236;
-    --color-text: #e6e6e8;
-    --color-muted: #a0a0a6;
-    --color-link: #ffdd00;
-    --color-link-hover: #fff0a0;
-    --color-focus: #ffdd00;
-    --color-border: #3a3a3e;
-    --color-danger: #ff4d4d;
-    --color-success-bg: #1f3a26;
-  }
-
   /* Отступы */
   --space-xs: 4px;
   --space-sm: 8px;
@@ -52,6 +36,22 @@
 
   /* Размеры */
   --container-width: 1100px;
+}
+
+/* Цвета тёмной темы */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #1c1c1e;
+  --color-surface: #2a2a2d;
+  --color-surface-alt: #323236;
+  --color-text: #e6e6e8;
+  --color-muted: #a0a0a6;
+  --color-link: #ffdd00;
+  --color-link-hover: #fff0a0;
+  --color-focus: #ffdd00;
+  --color-border: #3a3a3e;
+  --color-danger: #ff4d4d;
+  --color-success-bg: #1f3a26;
 }
 
 /* ===============================
@@ -232,6 +232,7 @@ a:focus-visible {
   padding: var(--space-xl) var(--space-lg);
   color: var(--color-white);
   border-radius: var(--radius-lg);
+  height: 400px;
 }
 
 .hero::before {
