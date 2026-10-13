@@ -6,11 +6,13 @@
   <meta name="description" content="Карточка выбранного товара.">
   <title>Карточка товара — Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
+      <button class="button button--secondary site-header__theme" id="theme-toggle" type="button">Тёмная тема</button>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item">
@@ -67,7 +69,7 @@
           <tbody>
             <tr>
               <th class="product__specs-name" scope="row">Размеры</th>
-              <td>
+              <td class="product__specs-value">
                 <ul class="product__sizes">
                   <li class="product__size">36-37</li>
                   <li class="product__size">38-39</li>
@@ -78,11 +80,11 @@
             </tr>
             <tr>
               <th class="product__specs-name" scope="row">Материал</th>
-              <td>войлок</td>
+              <td class="product__specs-value">войлок</td>
             </tr>
             <tr>
               <th class="product__specs-name" scope="row">Цвет</th>
-              <td>жёлтый</td>
+              <td class="product__specs-value">жёлтый</td>
             </tr>
           </tbody>
         </table>
