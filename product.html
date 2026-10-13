@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Карточка выбранного товара.">
+  <title>Карточка товара — Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Сделать заказ</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__separator">/</span>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__separator">/</span>
+      <span class="breadcrumbs__current">Карточка товара</span>
+    </nav>
+
+    <section class="section product">
+      <div class="product__photo">
+        <img class="product__image" src="images/tapchan.webp" alt="Тапки 1С">
+      </div>
+      
+      <div class="product__info">
+        <h1 class="product__title">Тапочки меховые с лого 1С</h1>
+
+        <div class="product__buy">
+          <p class="product__price">1000 руб.</p>
+          <a class="button button--primary product__button" href="order.html">Оставить заявку</a>
+        </div>
+
+        <table class="product__specs">
+          <caption class="product__specs-caption">Характеристики</caption>
+
+          <tbody>
+            <tr>
+              <th class="product__specs-name" scope="row">Размеры</th>
+              <td>
+                <ul class="product__sizes">
+                  <li class="product__size">36-37</li>
+                  <li class="product__size">38-39</li>
+                  <li class="product__size">40-41</li>
+                  <li class="product__size">42-43</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="product__specs-name" scope="row">Материал</th>
+              <td>войлок</td>
+            </tr>
+            <tr>
+              <th class="product__specs-name" scope="row">Цвет</th>
+              <td>жёлтый</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+</body>
+</html>
