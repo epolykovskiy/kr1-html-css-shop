@@ -76,19 +76,6 @@ footer {
    3. Общие элементы интерфейса
    =============================== */
 
-a {
-  color: var(--color-primary);
-}
-
-a:hover {
-  color: var(--color-primary-dark);
-}
-
-a:focus-visible {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 3px;
-}
-
 .button {
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
@@ -105,6 +92,7 @@ a:focus-visible {
 }
 
 .button--primary:hover {
+  color: var(--color-white);
   background-color: var(--color-primary-dark);
 }
 
@@ -130,12 +118,29 @@ a:focus-visible {
   cursor: not-allowed;
 }
 
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
 /* ===============================
    4. Компоненты страницы
    =============================== */
 
 .site-header {
   background-color: var(--color-surface);
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .site-header__inner {
@@ -185,11 +190,25 @@ a:focus-visible {
 }
 
 .hero {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
   padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-surface-accent);
+  color: var(--color-white);
   border-radius: var(--radius-lg);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  z-index: -1;
+  background-image: url("../images/main.webp");
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px) brightness(0.5);
 }
 
 .section {
@@ -208,6 +227,7 @@ a:focus-visible {
 }
 
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -248,13 +268,37 @@ a:focus-visible {
   color: var(--color-danger);
 }
 
-.product-card__button {
+.product-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
   margin-top: auto;
-  align-self: flex-start;
 }
 
 .product-card__image {
   width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.product-card__badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-danger);
+  border-radius: var(--radius-sm);
+}
+
+.product-card__badge--hit {
+  background-color: var(--color-danger);
+}
+
+.product-card__badge--discount {
+  background-color: var(--color-success);
 }
 
 .catalog-layout {
@@ -368,8 +412,28 @@ a:focus-visible {
   border-collapse: collapse;
 }
 
-.product__specs-name {
+.product__specs-caption {
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
   text-align: left;
+}
+
+.product__specs-name,
+.product__specs-value {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.product__specs-name {
+  width: 35%;
+  font-weight: 400;
+  color: var(--color-muted);
+  text-align: left;
+}
+
+.product__specs tr:nth-child(even) {
+  background-color: var(--color-surface);
 }
 
 .product__sizes {
